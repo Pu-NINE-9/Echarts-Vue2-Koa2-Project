@@ -8,14 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@koa/cors':
+        specifier: ^5.0.0
+        version: 5.0.0
       koa:
         specifier: ^3.0.1
         version: 3.0.1
-      koa-cors:
-        specifier: ^0.0.16
-        version: 0.0.16
 
 packages:
+
+  '@koa/cors@5.0.0':
+    resolution: {integrity: sha512-x/iUDjcS90W69PryLDIMgFyV21YLTnG9zOpPXS7Bkt2b8AsY3zZsIpOLBkYr9fBcF3HbkKaER5hOBZLfpLgYNw==}
+    engines: {node: '>= 14.0.0'}
 
   accepts@1.3.8:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
@@ -86,9 +90,6 @@ packages:
 
   koa-compose@4.1.0:
     resolution: {integrity: sha512-8ODW8TrDuMYvXRwra/Kh7/rJo9BtOfPc6qO8eAfC80CnCvSjSl0bkRM24X6/XBBEyj0v1nRUQ1LyOy3dbqOWXw==}
-
-  koa-cors@0.0.16:
-    resolution: {integrity: sha512-s15knPxe3AJBi2I/ZMPL0pSqU+PLYLO6k5tI0AqClkzavowvocPlSdFUwaHNqtjHMhsGmiq2tiX/25iILJx9YA==}
 
   koa@3.0.1:
     resolution: {integrity: sha512-oDxVkRwPOHhGlxKIDiDB2h+/l05QPtefD7nSqRgDfZt8P+QVYFWjfeK8jANf5O2YXjk8egd7KntvXKYx82wOag==}
@@ -162,6 +163,10 @@ packages:
 
 snapshots:
 
+  '@koa/cors@5.0.0':
+    dependencies:
+      vary: 1.1.2
+
   accepts@1.3.8:
     dependencies:
       mime-types: 2.1.35
@@ -224,8 +229,6 @@ snapshots:
       tsscmp: 1.0.6
 
   koa-compose@4.1.0: {}
-
-  koa-cors@0.0.16: {}
 
   koa@3.0.1:
     dependencies:

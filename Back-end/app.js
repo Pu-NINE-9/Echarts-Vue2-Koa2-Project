@@ -6,7 +6,7 @@ const resHeaderMiddleware = require('./middleware/koa-response-header')
 const resDataMiddleware = require('./middleware/koa-response-data')
 
 // koa框架专属跨域
-const cors = require('koa-cors')
+const cors = require('@koa/cors')
 
 
 const app = new Koa()
